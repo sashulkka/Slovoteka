@@ -3,12 +3,9 @@ package com.wetried.remindly;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.wetried.remindly.databinding.ActivityQuizBinding;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
