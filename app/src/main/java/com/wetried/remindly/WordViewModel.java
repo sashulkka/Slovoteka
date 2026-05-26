@@ -19,7 +19,7 @@ public class WordViewModel extends AndroidViewModel {
 
         allWords = Transformations.switchMap(searchQuery, query -> {
             if (query == null || query.isEmpty()) {
-                return wordDao.getAllWords(); // Показываем всё, если поиск пустой
+                return wordDao.getAllWords();
             } else {
                 return wordDao.searchWords("%" + query + "%");
             }
