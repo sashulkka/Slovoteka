@@ -1,8 +1,6 @@
 package com.wetried.remindly;
-
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
@@ -10,12 +8,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.wetried.remindly.databinding.LibraryBinding;
-
 import org.jspecify.annotations.NonNull;
-
 import java.util.List;
 
 public class LibraryActivity extends AppCompatActivity {
@@ -28,7 +23,6 @@ public class LibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = LibraryBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
 
         binding.add.setOnClickListener(v -> {
             Intent intent = new Intent(LibraryActivity.this, CreateWordActivity.class);
@@ -46,7 +40,7 @@ public class LibraryActivity extends AppCompatActivity {
             public boolean onMove(@NonNull RecyclerView recyclerView, RecyclerView.@NonNull ViewHolder viewHolder, RecyclerView.@NonNull ViewHolder target) {
                 return false;
             }
-
+            
             @Override
             public void onSwiped(RecyclerView.@NonNull ViewHolder viewHolder, int direction) {
                 int position = viewHolder.getAdapterPosition();
@@ -83,11 +77,6 @@ public class LibraryActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(android.text.Editable s) {}
         });
-
     }
-
-
-
-
-    }
+}
 
