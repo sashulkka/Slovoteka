@@ -5,10 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebViewClient;
-
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.wetried.remindly.databinding.ActivityWebBinding;
 
 public class WebActivity extends AppCompatActivity {
@@ -38,8 +36,6 @@ public class WebActivity extends AppCompatActivity {
             }
         });
     }
-
-
 
     public static Intent newIntent(Context context, String url) {
         Intent intent = new Intent(context, WebActivity.class);
