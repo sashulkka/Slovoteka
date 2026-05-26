@@ -1,10 +1,7 @@
 package com.wetried.remindly;
-
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.wetried.remindly.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
