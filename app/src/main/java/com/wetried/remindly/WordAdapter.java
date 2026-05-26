@@ -41,7 +41,6 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.WordHolder> {
         return words.get(position);
     }
 
-
     class WordHolder extends RecyclerView.ViewHolder {
         private final TextView wordText;
         private final TextView translateText;
